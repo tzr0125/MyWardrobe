@@ -5,8 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Auth(r *gin.Engine) gin.HandlerFunc {
+func Auth(r *gin.Engine) {
 
 	authMiddleware := middleware.AuthMiddleware()
-	r.Handlers()
+
+	r.POST("/login", authMiddleware.LoginHandler)
+	r.GET("/logout", authMiddleware.LogoutHandler)
+
 }	
