@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mywardrobe_postgres:
+    container_name: mywardrobe_postgres
+    image: postgres:16-alpine # https://hub.docker.com/_/postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_DB: mywardrobe
+      # POSTGRES_PASSWORD: mywardrobe
+      POSTGRES_HOST_AUTH_METHOD: trust #  Allow all connections without a password!
+    volumes:
+      - mywardrobe_postgres:/var/lib/postgresql/data
+    networks:
+      - mywardrobe
+    restart: always
