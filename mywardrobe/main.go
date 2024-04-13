@@ -1,6 +1,7 @@
 package main
 
 import (
+	"example.com/m/v2/pkg/server/router"
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,5 +12,6 @@ func main() {
             "message": "Hello World!",
         })
     })
+    router.Test(r)
     r.Run(":8080")
 }

@@ -9,4 +9,4 @@ export const authConfig = {
   callbacks: {
     authorized: authorized,
   },
-} satisfies NextAuthConfig;
+} satisfies NextAuthConfig;``
