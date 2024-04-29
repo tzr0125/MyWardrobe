@@ -1,0 +1,5 @@
+host: "localhost"
+port: "6666"
+user: "root"
+password: ""
+dbname: "mywardrobe"

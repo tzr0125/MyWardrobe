@@ -5,6 +5,14 @@ go 1.21.5
 require (
 	github.com/appleboy/gin-jwt/v2 v2.9.2
 	github.com/gin-gonic/gin v1.9.1
+	github.com/go-xorm/xorm v0.7.9
+	github.com/mattn/go-sqlite3 v1.14.22
+)
+
+require (
+	github.com/lib/pq v1.10.9 // indirect
+	github.com/sirupsen/logrus v1.9.3 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (
@@ -35,5 +43,8 @@ require (
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	xorm.io/builder v0.3.13 // indirect
+	xorm.io/core v0.7.3 // indirect
 )
