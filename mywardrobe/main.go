@@ -2,14 +2,16 @@ package main
 
 import (
 	"example.com/m/v2/pkg/server/router"
+	db "example.com/m/v2/pkg/server/storage/db/postgresql"
 	"github.com/gin-gonic/gin"
-    "example.com/m/v2/pkg/server/storage/db"
 )
 
 func main() {
-
-    // 启动数据库
-    db := db.InitMongoDB()
+    // 处理数据库
+    db, err := db.InitPostgresql()
+    if err != nil{
+        return 
+    }
     defer db.Close()
 
     // 启动路由
