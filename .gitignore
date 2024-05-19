@@ -4,3 +4,6 @@ next/
 # Python files
 __pycache__/
 node_modules/
+
+# Ignore all files in tests directory
+tests/*

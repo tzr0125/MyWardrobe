@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "./mywardrobe/main.go"
+            "program": "./tests/main.go"
         }
     ]
 }
